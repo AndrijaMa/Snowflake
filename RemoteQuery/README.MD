@@ -3,16 +3,16 @@
 <H3>Snowflake Account in Azure </H3><br>
 <br>
 Step P1:<br>
-CREATE or replace SECURITY INTEGRATION <br>
+CREATE or replace SECURITY INTEGRATION MY_SEC_INT<br>
 <br>
 Step P2:<br>
-SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('EU_DEMO162_SEC_INT');<br>
+SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('MY_SEC_INT');<br>
 <br>
 Step P3:<br>
 COPY OAUTH_CLIENT_SECRET<br> 
 COPY OAUTH_CLIENT_ID<br>
 <br>
-Create a new refresh token<br>
+<H4>Create a new refresh token</H4><br>
 Step T1 <br>
 Run the steps in the Notebook<br>
 <br>
