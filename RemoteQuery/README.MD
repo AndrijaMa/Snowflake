@@ -19,29 +19,23 @@ Run the steps in the Notebook<br>
 Step T2<br> 
 Run the CURL command to generate the Refresh Token<br>
 Copy Refresh-token<br>
+<br>
+<br>CONSUMER
+<br>Snowflake AWS Ireland
+<br>Step C1
+<br>CREATE OR REPLACE SECURITY INTEGRATION 
+<br>
+<br>REPLACE OAUTH_CLIENT_ID from US
+<br>REPLACE OAUTH_CLIENT_SECRET from US
 
-CONSUMER
-Snowflake AWS Ireland
-Step C1
-CREATE OR REPLACE SECURITY INTEGRATION 
+<br>Step  C2
+<br>CREATE OR REPLACE SECRET
+<br>Replace OAUTH_REFRESH_TOKEN from the command prompt
 
-REPLACE OAUTH_CLIENT_ID from US
-REPLACE OAUTH_CLIENT_SECRET from US
+<br>Step C3
+<br>CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION
+<br>Run again
 
-Step  C2
-CREATE OR REPLACE SECRET
-Replace OAUTH_REFRESH_TOKEN from the command prompt
-
-Step C3
-CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION
-Run again
-
-Token Refresh
-When you need to replace a expired token
-Run steps on the 4,5 & 7 to refresh a expired token
-
-
-
-SECRET = Snow_remote_token
-EXTERNAl NETWORk INTEGRATION Snow_access_int
-snow_access_rules
+<br>Token Refresh
+<br>When you need to replace a expired token
+<br>Run steps on the 4,5 & 7 to refresh a expired token
