@@ -14,8 +14,10 @@ COPY OAUTH_CLIENT_SECRET<br>
 COPY OAUTH_CLIENT_ID<br>
 <br>
 <H4>Create a new refresh token</H4><br>
+<a href="https://community.snowflake.com/s/article/HOW-TO-OAUTH-TOKEN-GENERATION-USING-SNOWFLAKE-CUSTOM-OAUTH">Documentation</a><br>
 Step T1 <br>
 Run the steps in the Notebook<br>
+<a href="url">Documentation</a><br>
 <br>
 Step T2<br> 
 Run the CURL command to generate the Refresh Token<br>
@@ -25,6 +27,7 @@ Copy Refresh-token<br>
 <br>Snowflake AWS Ireland
 <br>Step C1
 <br>CREATE OR REPLACE SECURITY INTEGRATION 
+<a href="url">Documentation</a><br>
 <br>
 <br>REPLACE OAUTH_CLIENT_ID from US
 <br>REPLACE OAUTH_CLIENT_SECRET from US
