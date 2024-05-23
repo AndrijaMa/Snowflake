@@ -20,7 +20,7 @@ Step T2<br>
 Run the CURL command to generate the Refresh Token<br>
 Copy Refresh-token<br>
 <br>
-<br>CONSUMER
+<br><H2>CONSUMER</H2>
 <br>Snowflake AWS Ireland
 <br>Step C1
 <br>CREATE OR REPLACE SECURITY INTEGRATION 
@@ -36,6 +36,6 @@ Copy Refresh-token<br>
 <br>CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION
 <br>Run again
 
-<br>Token Refresh
+<br><H3>Token Refresh</H3>
 <br>When you need to replace a expired token
 <br>Run steps on the 4,5 & 7 to refresh a expired token
