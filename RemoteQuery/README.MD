@@ -4,6 +4,7 @@
 <br>
 Step P1:<br>
 CREATE or replace SECURITY INTEGRATION MY_SEC_INT<br>
+<a href="url">Documentation</a><br>
 <br>
 Step P2:<br>
 SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('MY_SEC_INT');<br>
@@ -20,7 +21,7 @@ Step T2<br>
 Run the CURL command to generate the Refresh Token<br>
 Copy Refresh-token<br>
 <br>
-<br><H2>CONSUMER</H2>
+<br><H2>DATA CONSUMER</H2>
 <br>Snowflake AWS Ireland
 <br>Step C1
 <br>CREATE OR REPLACE SECURITY INTEGRATION 
