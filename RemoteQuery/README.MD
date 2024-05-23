@@ -1,6 +1,6 @@
-PRODUCER <br>
+<H2>Data PRODUCER <H2><br>
 <br>
-Snowflake Azure US<br>
+Snowflake Account in Azure <br>
 <br>
 Step P1:<br>
 CREATE or replace SECURITY INTEGRATION <br>
