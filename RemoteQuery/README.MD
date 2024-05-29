@@ -22,10 +22,11 @@ OAUTH_REDIRECT_URI</br>
 OAUTH_AUTHORIZATION_ENDPOINT</br>
 OAUTH_TOKEN_ENDPOINT</br>
 </br>
-To get all the values run the selext 
+To get all the values run the select<br>
+</br>
 SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('MY_SEC_INT');<br>
 
-To only extract OAUTH_CLIENT_SECRET and OAUTH_CLIENT_ID run the command below; </br>
+To only extract OAUTH_CLIENT_SECRET and OAUTH_CLIENT_ID run the command below: </br>
 SELECT </br>
     D:OAUTH_CLIENT_SECRET::string AS OAUTH_CLIENT_SECRET, </br>
     D:OAUTH_CLIENT_ID::string AS OAUTH_CLIENT_ID </br>
