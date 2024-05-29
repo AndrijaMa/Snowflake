@@ -22,7 +22,15 @@ OAUTH_REDIRECT_URI</br>
 OAUTH_AUTHORIZATION_ENDPOINT</br>
 OAUTH_TOKEN_ENDPOINT</br>
 </br>
+To get all the values run the selext 
 SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('MY_SEC_INT');<br>
+
+To only extract OAUTH_CLIENT_SECRET and OAUTH_CLIENT_ID run the command below; </br>
+SELECT </br>
+    D:OAUTH_CLIENT_SECRET::string AS OAUTH_CLIENT_SECRET, </br>
+    D:OAUTH_CLIENT_ID::string AS OAUTH_CLIENT_ID </br>
+FROM (select parse_json(SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('EU_DEMO162_SEC_INT')) as D);</br>
+
 <br>
 Step P3:<br>
 COPY OAUTH_CLIENT_SECRET<br> 
