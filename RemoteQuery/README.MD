@@ -3,7 +3,7 @@
 <H3>Snowflake Account in Azure </H3><br>
 <br>
 Step P1:<br>
-Register the Client<br>
+<H3>Register the Client</H3><br>
 CREATE SECURITY INTEGRATION MY_SNOWSQL_CLIENT<br>
 TYPE = OAUTH<br>
 ENABLED = TRUE<br>
