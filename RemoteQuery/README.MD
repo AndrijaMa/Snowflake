@@ -15,7 +15,13 @@ OAUTH_REFRESH_TOKEN_VALIDITY = 86400<br>
 
 <a href="https://community.snowflake.com/s/article/HOW-TO-OAUTH-TOKEN-GENERATION-USING-SNOWFLAKE-CUSTOM-OAUTH#Register-the-Client">Documentation</a><br>
 <br>
-Step P2:<br>
+<H3>Step P2: Gather details for client configuration</H3><br>
+Describe the above Security Integration and note down the below details, they will be used in the following steps:</br>
+OAUTH_CLIENT_ID</br>
+OAUTH_REDIRECT_URI</br>
+OAUTH_AUTHORIZATION_ENDPOINT</br>
+OAUTH_TOKEN_ENDPOINT</br>
+</br>
 SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('MY_SEC_INT');<br>
 <br>
 Step P3:<br>
