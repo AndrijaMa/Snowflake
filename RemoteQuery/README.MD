@@ -3,8 +3,18 @@
 <H3>Snowflake Account in Azure </H3><br>
 <br>
 Step P1:<br>
-CREATE or replace SECURITY INTEGRATION MY_SEC_INT<br>
-<a href="url">Documentation</a><br>
+Register the Client<br>
+CREATE SECURITY INTEGRATION MY_SNOWSQL_CLIENT<br>
+TYPE = OAUTH<br>
+ENABLED = TRUE<br>
+OAUTH_CLIENT = CUSTOM<br>
+OAUTH_CLIENT_TYPE = 'CONFIDENTIAL'<br>
+OAUTH_REDIRECT_URI = 'https://localhost'<br>
+OAUTH_ISSUE_REFRESH_TOKENS = TRUE<br>
+OAUTH_REFRESH_TOKEN_VALIDITY = 86400<br>
+;<br>
+
+<a href="https://community.snowflake.com/s/article/HOW-TO-OAUTH-TOKEN-GENERATION-USING-SNOWFLAKE-CUSTOM-OAUTH#Register-the-Client">Documentation</a><br>
 <br>
 Step P2:<br>
 SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('MY_SEC_INT');<br>
