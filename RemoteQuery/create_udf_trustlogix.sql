@@ -41,7 +41,6 @@ def get_data(account_name, sql_command, wh_name, role_name, user_name):
                 }
             }
     
-        
     response = session.post(RequestUrl, json=body, headers=header)
         
     responseJson = response.json()
