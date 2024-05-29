@@ -30,7 +30,7 @@ To only extract OAUTH_CLIENT_SECRET and OAUTH_CLIENT_ID run the command below: <
 SELECT </br>
     D:OAUTH_CLIENT_SECRET::string AS OAUTH_CLIENT_SECRET, </br>
     D:OAUTH_CLIENT_ID::string AS OAUTH_CLIENT_ID </br>
-FROM (select parse_json(SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('EU_DEMO162_SEC_INT')) as D);</br>
+FROM (select parse_json(SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('MY_SNOWSQL_CLIENT')) as D);</br>
 
 <br>
 Step P3:<br>
